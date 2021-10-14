@@ -27,7 +27,8 @@
     - TINTS: #fae5d3; #fdf2e9;
     - SHADES: #cf711f;
     - ACCENTS:
-    - GREYS: #555; #333;
+    - GREYS: #555; #333; 
+        - #6f6f6f; lightest grey allowed on #fdf2e9
     - Brightest to Darkest : #fff, #eee,  #ccc, #bbb, #aaa, #999, 888-000 
     
 
@@ -205,3 +206,4 @@ body {
 strong {
   font-weight: 500;
 }
+
