@@ -66,7 +66,7 @@ body {
 .container {
   /* 1140px */
   max-width: 120rem;
-  padding: 0 3.2rem; 
+  padding: 0 3.2rem;
   margin: 0 auto;
   /* same margin to left & right side automatically */
 }
@@ -176,17 +176,37 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
-   color: #e67e22;
-   text-decoration: none;
-   border-bottom: 1px solid currentColor;
-   padding-bottom: 2px;
-   transition: all 0.3s;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent; /* remove underline */
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-items {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
 
 /* HELPER/SETTINGS CLASSES */
@@ -206,4 +226,3 @@ body {
 strong {
   font-weight: 500;
 }
-
