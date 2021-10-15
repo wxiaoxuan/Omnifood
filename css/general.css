@@ -76,6 +76,17 @@ body {
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
+  /* margin-bottom: 9.6rem; (move to not last child)
+}
+
+ .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* not the last child will have 9.6rem */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 
 .grid--2--cols {
   grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
