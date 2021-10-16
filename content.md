@@ -119,25 +119,26 @@ Create account
 Sign in
 iOS app
 Android app
+
 About Omnifood
 For Business
 Cooking partners
 Careers
+
 Recipe directory
 Help center
 Privacy & terms
-
 
 ######
 
 ## Sections
 
-- Navigation 
+- Navigation
 - Hero
-- Featured in 
+- Featured in
 - How it works
 - Meals (and list of diets )
 - Testimonials + Gallery
 - Pricing + Features
 - CTA (call-to-action)
-- Footer 
+- Footer

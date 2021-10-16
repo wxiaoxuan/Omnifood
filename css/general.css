@@ -27,8 +27,11 @@
     - TINTS: #fae5d3; #fdf2e9; #eb984e;
     - SHADES: #cf711f; #45260a;
     - ACCENTS:
-    - GREYS: #555; #333; 
+    - GREYS: #555; #333; #888; 
+    
+        - #767676; lightest grey allowed on #fff;
         - #6f6f6f; lightest grey allowed on #fdf2e9
+
     - Brightest to Darkest : #fff, #eee,  #ccc, #bbb, #aaa, #999, 888-000 
     
 
@@ -94,11 +97,15 @@ body {
 }
 
 .grid--3--cols {
-  grid-template-columns: repeat(3, 1fr); /* 2x2 grid */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4--cols {
-  grid-template-columns: repeat(4, 1fr); /* 2x2 grid */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -206,10 +213,10 @@ body {
 
 /* focus: another state of link/visited/hover */
 *:focus {
- outline: none;
- /* outline: 4px dotted #e67e22; */
- /* outline-offset: 8px; */
- box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
 }
 
 /* RECIPE LINK */
