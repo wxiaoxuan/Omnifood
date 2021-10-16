@@ -487,7 +487,7 @@
 /* =============================================================================================================== */
 
 .feature-icon {
-  color:#e67e22;
+  color: #e67e22;
   height: 2.4rem;
   width: 2.4rem;
   background-color: #fdf2e9;
@@ -507,3 +507,90 @@
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
+/* =============================================================================================================== */
+/* CTA SECTION */
+/* =============================================================================================================== */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* (2/3 width, 1/3 width) */
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+  /* temporary */
+  /* height: 50rem; */
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+/* use bg image will be easier to overlay a color on top of it  */
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(28, 80%, 61%, 0.35),
+      hsla(28, 80%, 52%, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover; /* bg img will always cover the dimension of this element (.cta) entirely  */
+  background-position: center;
+}
+
+/* CTA FORM */
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block; /* give it its own line */
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-family: inherit; /* inherit parent's font */
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(253, 241, 232, 0.5);
+ }
