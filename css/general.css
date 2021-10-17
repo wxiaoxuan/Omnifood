@@ -56,6 +56,12 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 10PX / 16PX = 0.625 = 62.5% */
+  /* PERCENTAGE OF USER'S BROWSER FONT-SIZE SETTING */
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
