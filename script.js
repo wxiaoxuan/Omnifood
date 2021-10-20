@@ -52,6 +52,30 @@ allLinks.forEach(function (link) {
 });
 
 // ==============================================================================================
+// STICKY NAVIGATION
+// ==============================================================================================
+
+const sectionheroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(function(entries) {
+  const ent = entries[0];
+  console.log(ent);
+  //if (ent.isIntersecting === false)
+  if (!ent.isIntersecting)
+  document.body.classList.add('sticky');
+
+  if (ent.isIntersecting)
+  document.body.classList.remove('sticky');
+}, 
+{
+  root: null, //observe the hero section inside the viewport
+  threshold: 0 , //will have an event as soon as 0% of hero-section is inside of viewport
+  rootMargin: "-70px",
+});
+
+obs.observe(sectionheroEl); //observe some elements in the HTML using this observer 
+
+// ==============================================================================================
 // Fixing flexbox gap property missing in some Safari versions
 // ==============================================================================================
 
