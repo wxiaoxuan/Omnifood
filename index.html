@@ -17,21 +17,29 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header nav-open">
+    <header class="header">
       <a href="#">
         <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-list" href="#">How it works</a></li>
-          <li><a class="main-nav-list" href="#">Meals</a></li>
-          <li><a class="main-nav-list" href="#">Testimonials</a></li>
-          <li><a class="main-nav-list" href="#">Pricing</a></li>
-          <li><a class="main-nav-list nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-list" href="#how">How it works</a></li>
+          <li><a class="main-nav-list" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-list" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-list" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-list nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -55,11 +63,13 @@
               nutritional needs.
             </p>
             <!-- SUBSCRIBE -->
-            <a href="#" class="btn btn--full margin-right-sm"
+            <!-- create a page anchor -->
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
+
             <!-- down arrow symbol: &darr; -->
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -120,7 +130,7 @@
       </section>
 
       <!-- HOW-IT-WORKS SECTION -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works </span>
           <h2 class="heading-secondary">
@@ -199,7 +209,7 @@
       </section>
 
       <!-- MEALS SECTION -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <!-- center the content in the viewport -->
         <div class="container center-text">
           <!-- <span> and <h2> will inherit to .center-text -->
@@ -321,7 +331,7 @@
 
       <!-- --------------------------------------------------------------------------------------------------------- -->
       <!-- TESTIMONIALS -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <!-- <span> and <h2> will inherit to .center-text -->
           <span class="subheading">Testimonials</span>
@@ -483,7 +493,7 @@
 
       <!-- --------------------------------------------------------------------------------------------------------- -->
       <!-- PRICING SECTION -->
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <!-- center the content in the viewport -->
         <div class="container">
           <!-- <span> and <h2> will inherit to .center-text -->
@@ -618,7 +628,7 @@
 
       <!-- --------------------------------------------------------------------------------------------------------- -->
       <!-- CALL TO ACTION (CTA) SECTION -->
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <!-- TEXT -->
@@ -710,7 +720,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2021 by Omnifood Inc. All rights reserved.
+            Copyright &copy; <span class="year">2021</span> by Omnifood Inc. All
+            rights reserved.
           </p>
         </div>
 
@@ -764,7 +775,6 @@
       </div>
     </footer>
 
-    <!-- --------------------------------------------------------------------------------------------------------- -->
     <!-- ION ICONS -->
     <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
     <script

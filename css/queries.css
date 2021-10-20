@@ -125,6 +125,7 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
@@ -158,7 +159,7 @@
 
   /* OPEN NAVIGATION */
   .nav-open .main-nav {
-    opacity: 0; /* !!!!!!!!!! change back to open nav */
+    opacity: 1; /* !!!!!!!!!! change back to open nav */
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0%);
